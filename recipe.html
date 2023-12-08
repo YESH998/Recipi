@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe project</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            overflow-x:none;
+            background-color: #e2e5e8;
+            background-image: linear-gradient(160deg,#e2e5e8 0%,#ffffff 100%);
+
+        }
+        .navcontainer{
+            width: 100%;
+            /* background-color: rgba(9, 9, 50, 0.866); */
+            /* background-color: #0093e9;
+            background-image: linear-gradient(160deg,#0093e9 0%,#00d0c7 100%); */
+            background-color: #000000;   
+            background-image: linear-gradient(160deg,#000000 0%,#8085d0);
+            min-height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        nav{
+            width: 100%;
+            padding-right: 2rem;
+            
+        }
+        #navlist{
+            width: 100%;
+            padding: 15px;
+            list-style: none;
+            font-size: 2.5rem;
+            display: flex;
+            justify-content: space-around;
+            /* margin-left: 15px;
+            margin-right:15px ; */
+            align-items: center;
+        }
+        #navlogo{
+            font-size: 2.8rem;
+            color: azure;
+        }
+        a{
+            text-decoration: none;
+            color: azure;
+        }
+        .navitems{
+            display: flex;
+            gap: 40px;
+        }
+        .footerbox{
+            /* background-color: #0093e9;
+            background-image: linear-gradient(160deg,#0093e9 0%,#00d0c7 100%);      */
+            background-color: #000000;   
+            background-image: linear-gradient(160deg,#000000 0%,#8085d0);
+            width: 100%;
+            text-align: center;
+            min-height: 40px;
+        }
+        .footerbox p{
+            color: azure;
+            font-size: 2rem;
+        }
+        .contentbox{
+            width: 70%;
+            margin: auto;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            padding: 3rem;
+            box-shadow: 1px 0px 30px black;
+
+        }      
+
+        .items{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        .rightbox{
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s linear 0s;
+            box-shadow: 1px 1px 10px black;
+            border-radius: 20px;
+           
+        }
+        .rightbox img{
+            height: 400px;
+            width: 300px;
+            border-radius: 20px;
+            transition: all 0.6s linear 0s;
+
+        }
+        .rightbox:hover{
+            transform: scale(1.1);
+
+        }
+        .rightbox .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(57, 51, 51, 0.822);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            opacity: 0;
+            transition: all 0.3s linear 0s;
+
+        }
+        .rightbox:hover .overlay{
+            opacity: 1;
+        }
+        .rightbox .overlay span{
+            color: azure;
+            font-size: 1.2rem;
+        }
+        .leftbox{
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+        .leftbox h2{
+            font-size: 2rem;
+        }
+
+        .ingbox{
+            font-size: 1.2rem;
+        }
+        .recipebox{
+            font-size: 1.1rem;
+        }
+        hr{
+       border-style: dashed;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <header>
+             <div class="navcontainer">
+            <nav>
+                <ul id="navlist">
+                    <li>
+                        <p id="navlogo">New High Resturant</p>
+                    </li>
+                    <li>
+                        <div class="navitems">
+                            <a href="#">Home</a>
+                            <a href="#">Contact</a>
+                            <a href="#">About</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+
+        <main>
+            <div class="contentbox">
+
+                <section>
+                    <!-- item 1 -->
+                    <div class="items">
+                        <div class="leftbox">
+                            <!-- heading -->
+                            <h2>Ladu </h2>
+
+                            <div >
+                                  <h2>Ingredients</h2>
+                                <ul class="ingbox">
+                                     <li>Sugar</li>
+                                     <li>oil</li>
+                                     <li>bread</li>
+                                </ul>
+                            </div>
+
+                            <div >
+                                       <h2>Recipe</h2>
+                            <ol class="recipebox">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quaerat.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                            </ol>
+                            </div>
+                          
+                            
+                          
+
+                        </div>
+                        <div class="rightbox">
+
+                            <img src="360_F_534445964_gd9YSooLytMWQFtvtR0ri5o4N2TVvHew.webp" alt="image">
+                            <div class="overlay">
+                                <span>Click here to buy</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <hr>
+
+                <section>
+                    <!-- item 1 -->
+                    <div class="items">
+                        <div class="leftbox">
+                            <!-- heading -->
+                            <h2>Flower Cake </h2>
+
+                            <div>
+                                  <h2>Ingredients</h2>
+                                <ul class="ingbox">
+                                     <li>Sugar</li>
+                                     <li>oil</li>
+                                     <li>bread</li>
+                                </ul>
+                            </div>
+
+                            <div >
+                                       <h2>Recipe</h2>
+                            <ol class="recipebox">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quaerat.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                            </ol>
+                            </div>
+                          
+                        </div>
+                        <div class="rightbox">
+                            <img src="premium_photo-1671915835768-34183674970a.jpg" alt="image">
+                            <div class="overlay">
+                                <span>Click here to buy</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section>
+                    <!-- item 1 -->
+                    <div class="items">
+                        <div class="leftbox">
+                            <!-- heading -->
+                            <h2>Jalebi </h2>
+
+                            <div>
+                                  <h2>Ingredients</h2>
+                                <ul class="ingbox">
+                                     <li>Sugar</li>
+                                     <li>oil</li>
+                                     <li>bread</li>
+                                </ul>
+                            </div>
+
+                            <div >
+                                       <h2>Recipe</h2>
+                            <ol class="recipebox">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quaerat.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                            </ol>
+                            </div>
+                          
+                        </div>
+                        <div class="rightbox">
+                            <img src="depositphotos_407751064-stock-photo-jalebi-also-know-imarti-imarati.webp" alt="image">
+                            <div class="overlay">
+                                <span>Click here to buy</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section>
+                    <!-- item 1 -->
+                    <div class="items">
+                        <div class="leftbox">
+                            <!-- heading -->
+                            <h2>Barfi</h2>
+
+                            <div>
+                                  <h2>Ingredients</h2>
+                                <ul class="ingbox">
+                                     <li>Sugar</li>
+                                     <li>oil</li>
+                                     <li>bread</li>
+                                </ul>
+                            </div>
+
+                            <div >
+                                       <h2>Recipe</h2>
+                            <ol class="recipebox">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quaerat.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                            </ol>
+                            </div>
+                          
+                        </div>
+                        <div class="rightbox">
+                            <img src="depositphotos_521142092-stock-photo-kaju-katli-popular-indian-sweet.webp" alt="image">
+                            <div class="overlay">
+                                <span>Click here to buy</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section>
+                    <!-- item 1 -->
+                    <div class="items">
+                        <div class="leftbox">
+                            <!-- heading -->
+                            <h2>Gulab Jamun</h2>
+
+                            <div>
+                                  <h2>Ingredients</h2>
+                                <ul class="ingbox">
+                                     <li>Sugar</li>
+                                     <li>oil</li>
+                                     <li>bread</li>
+                                </ul>
+                            </div>
+
+                            <div >
+                                       <h2>Recipe</h2>
+                            <ol class="recipebox">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quaerat.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                            </ol>
+                            </div>
+                          
+                        </div>
+                        <div class="rightbox">
+                            <img src="gulab-jamun.jpg.webp" alt="image">
+                            <div class="overlay">
+                                <span>Click here to buy</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section>
+                    <!-- item 1 -->
+                    <div class="items">
+                        <div class="leftbox">
+                            <!-- heading -->
+                            <h2>Kesar-Shrikhand</h2>
+
+                            <div>
+                                  <h2>Ingredients</h2>
+                                <ul class="ingbox">
+                                     <li>Sugar</li>
+                                     <li>oil</li>
+                                     <li>bread</li>
+                                </ul>
+                            </div>
+
+                            <div >
+                                       <h2>Recipe</h2>
+                            <ol class="recipebox">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quaerat.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                            </ol>
+                            </div>
+                          
+                        </div>
+                        <div class="rightbox">
+                            <img src="shrikhand-or-srikhand-is-an-indian-dessert-made-of-strained-yogurt-garnished-with-dry-fruits.webp" alt="image">
+                            <div class="overlay">
+                                <span>Click here to buy</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <hr>
+            </div>
+        </main>
+
+    
+        <footer>
+            <div class="footerbox">
+                <p>Copyright &copy; Yesh Chaudhari Pvt Lvt 2003 All Rights Reversed</p>
+            </div>
+        </footer>
+
+
+
+
+    </div>
+</body>
+</html>
